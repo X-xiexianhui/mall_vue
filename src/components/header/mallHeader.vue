@@ -6,7 +6,7 @@
         <el-icon :size="30"><Avatar/></el-icon>
       </div>
      <div style="float: right;padding: 10px">
-       <el-icon :size="30"><ShoppingCart /></el-icon>
+       <el-icon :size="30"><ShoppingCart/></el-icon>
      </div>
     </div>
   </div>

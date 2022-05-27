@@ -2,6 +2,8 @@
   <div :class="$style.box">
     <div :class="$style.logo"><img src='@/assets/frontend/img/logo_top.png' :class="$style.logo" alt="LeastMall商城"></div>
     <div :class="$style.btn">
+      <el-icon><Avatar/></el-icon>
+      <el-icon><ShoppingCart /></el-icon>
     </div>
   </div>
 </template>
@@ -50,6 +52,9 @@ export default {
 }
 .btn{
   margin-right: 20px;
+  .el-icon{
+    justify-content: space-between;
+  }
 }
 </style>
 

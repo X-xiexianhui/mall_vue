@@ -969,6 +969,11 @@
   resolved "https://registry.npmmirror.com/@element-plus/icons-vue/-/icons-vue-1.1.4.tgz"
   integrity sha512-Iz/nHqdp1sFPmdzRwHkEQQA3lKvoObk8azgABZ81QUOpW9s/lUyQVUSh0tNtEPZXQlKwlSh7SPgoVxzrE0uuVQ==
 
+"@element-plus/icons-vue@^2.0.0-beta.0":
+  version "2.0.0-beta.0"
+  resolved "https://registry.npmmirror.com/@element-plus/icons-vue/-/icons-vue-2.0.0-beta.0.tgz#46add998743c9cb7e10a5b8ea1f801e781654773"
+  integrity sha512-N8brpR+oOvmDz5zhHo4o7pQDa22eZT3vz3DPm6Nmy+rG+2Am7uVPgFp1ntnYHR/QuSt/Ac3T6XNmRBuxeaCGQA==
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.npmmirror.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz"

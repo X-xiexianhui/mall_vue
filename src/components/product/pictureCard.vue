@@ -1,35 +1,16 @@
 <template>
   <el-upload
-      action="#"
-      ref="upload"
-      :on-preview="handlePictureCardPreview"
-      :on-remove="handleRemove"
-      :auto-upload="false">
-    <el-icon><Plus /></el-icon>
-
-    <template #file="{ file }">
-      <div>
-        <img class="el-upload-list__item-thumbnail" :src="file.url" alt="" />
-        <span class="el-upload-list__item-actions">
-          <span
-              class="el-upload-list__item-preview"
-              @click="handlePictureCardPreview(file)"
-          >
-            <el-icon><zoom-in /></el-icon>
-          </span>
-          <span
-              v-if="!disabled"
-              class="el-upload-list__item-delete"
-              @click="handleRemove(file)"
-          >
-            <el-icon><Delete /></el-icon>
-          </span>
-        </span>
-      </div>
-    </template>
+  action="#"
+  :auto-upload="false"
+  list-type="picture-card"
+  :on-preview="handlePictureCardPreview"
+  :on-remove="handleRemove"
+  >
+  <el-icon><Plus /></el-icon>
   </el-upload>
-  <el-dialog v-model:visible="dialogVisible">
-    <img width="100%" :src="dialogImageUrl" alt="">
+
+  <el-dialog v-model="dialogVisible">
+    <img w-full :src="dialogImageUrl" alt="Preview Image" />
   </el-dialog>
 </template>
 

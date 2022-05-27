@@ -1,6 +1,6 @@
 <template>
   <div :class="$style.box">
-    <div :class="$style.logo"><img src='@/assets/frontend/img/logo_top.jpg' :class="$style.logo" alt="LeastMall商城"></div>
+    <div :class="$style.logo"><img src='@/assets/frontend/img/logo_top.png' :class="$style.logo" alt="LeastMall商城"></div>
     <div :class="$style.btn">
     </div>
   </div>

@@ -2,6 +2,7 @@ import axios from "axios";
 import baseURL from "@/common/config";
 import {ElMessage} from "element-plus";
 import {router} from "@/route";
+import app from "@/App";
 
 axios.defaults.baseURL = baseURL
 axios.defaults.withCredentials = true
@@ -14,9 +15,10 @@ axios.interceptors.request.use(config => {
 //响应拦截器即异常处理
 axios.interceptors.response.use(
     response => {
+        console.log(this.$route)
         if (401 === response.status) {
             // 重定向到登录页
-            this.$route.meta = false
+            app.$route.meta = false
             router.replace({
                 path: '/auth/login',
                 query: {redirect: router.currentRoute.fullPath},

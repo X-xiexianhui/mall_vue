@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import axios from "axios";
-import baseURL from "@/common/config";
-App.config.globalProperties.$axios = axios
-axios.defaults.baseURL = baseURL
-createApp(App).mount('#app')
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+const app = createApp(App)
+app.use(ElementPlus)
+app.mount('#app')

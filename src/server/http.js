@@ -19,9 +19,9 @@ axios.interceptors.response.use(
         if (401 === response.status) {
             // 重定向到登录页
             app.$route.meta = false
-            router.replace({
+            app.$route.push({
                 path: '/auth/login',
-                query: {redirect: router.currentRoute.fullPath},
+                query: {redirect: router.currentRoute.value.fullPath},
             })
         }
         if (response.data.success) {

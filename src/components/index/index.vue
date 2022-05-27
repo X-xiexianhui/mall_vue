@@ -1,10 +1,15 @@
 <template>
+  <div>
+    <mall-header/>
+  </div>
 </template>
 
 <script>
+import MallHeader from "@/components/header/mallHeader";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "index"
+  name: "index",
+  components: {MallHeader}
 }
 </script>
 

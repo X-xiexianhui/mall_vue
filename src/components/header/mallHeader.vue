@@ -26,7 +26,7 @@ export default {
   padding: 0 0;
   height: auto;
   width: 100%;
-  background: #ffe144;
+  background: orange;
   display: flex;
   justify-content: space-between;
   align-items: center;

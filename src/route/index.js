@@ -3,22 +3,19 @@ const routes = [
     {
         path:'/auth/login',
         name:'login',
-        component: () => import('../components/auth/login')
+        component: () => import('../components/auth/login'),
+        meta: {
+            isLogin: false
+        }
     },
     {
         path: '/',
         name: 'index',
         component: () => import('../components/index/index'),
-        meta:{
-            isLogin: false
-        }
     },
     {
         path: '/product',
         name: 'product',
-        meta:{
-            isLogin: false
-        }
     }
 ]
 
@@ -27,13 +24,7 @@ export const router = createRouter({
     routes: routes
 })
 router.beforeEach((to, from) => {
-    if (to.path !== '/' && to.path !== '/auth/login') {
-        if (from.meta.isLogin) {
-            to.meta.isLogin = true
-        } else {
-            return {
-                path: '/'
-            }
-        }
+    if (from.meta.isLogin) {
+        to.meta.isLogin = true
     }
 })

@@ -24,5 +24,7 @@ export const router = createRouter({
     routes: routes
 })
 router.beforeEach((to, from) => {
-        to.meta.isLogin = from.meta.isLogin
+    if (from.meta.isLogin) {
+        to.meta.isLogin = true
+    }
 })

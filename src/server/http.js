@@ -15,7 +15,6 @@ axios.interceptors.request.use(config => {
 //响应拦截器即异常处理
 axios.interceptors.response.use(
     response => {
-        console.log(this.$route)
         if (401 === response.status) {
             // 重定向到登录页
             app.$route.meta = false

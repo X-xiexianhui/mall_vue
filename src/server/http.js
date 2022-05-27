@@ -2,7 +2,7 @@ import axios from "axios";
 import baseURL from "@/common/config";
 import {ElMessage} from "element-plus";
 import {router} from "@/route";
-import app from "@/App";
+import app from "@/main";
 
 axios.defaults.baseURL = baseURL
 axios.defaults.withCredentials = true

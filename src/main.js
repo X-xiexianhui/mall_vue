@@ -14,3 +14,4 @@ app.component("Avatar",Avatar)
 app.component("ShoppingCart",ShoppingCart)
 app.use(ElementPlus)
 app.mount('#app')
+export default app

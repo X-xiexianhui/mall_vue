@@ -7,6 +7,7 @@ import {router} from "@/route";
 import {Avatar, Plus} from "@element-plus/icons-vue";
 import {ShoppingCart} from "@element-plus/icons-vue";
 
+
 const app = createApp(App)
 app.use(router)
 // eslint-disable-next-line vue/multi-word-component-names

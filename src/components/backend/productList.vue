@@ -3,7 +3,7 @@
     <el-table-column label="图片" width="180">
       <template #default="scope">
         <div style="display: flex; align-items: center">
-          <img :src="'data:image/png;base64,'+scope.row.image"/>
+          <img :src="'data:image/png;base64,'+scope.row.image" alt=""/>
         </div>
       </template>
     </el-table-column>

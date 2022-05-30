@@ -10,7 +10,13 @@
         </div>
       </template>v
     </el-table-column>
-    <el-table-column label="操作">
+    <el-table-column align="right">
+      <template #header>
+        <el-button
+            size="small"
+            @click="handleAdd"
+        >添加商品</el-button>
+      </template>
       <template #default="scope">
         <el-button
             size="small"

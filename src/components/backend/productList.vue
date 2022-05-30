@@ -5,7 +5,7 @@
         <div style="display: flex; align-items: center">
           <el-image style="width: 100px; height: 100px" :src="'data:image/png;base64,'+scope.row.image" fit="fit" />
         </div>
-      </template>
+      </template>v
     </el-table-column>
     <el-table-column prop="product" label="关联商品" width="180"></el-table-column>
     <el-table-column label="操作">

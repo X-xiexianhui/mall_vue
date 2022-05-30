@@ -1,13 +1,15 @@
 <template>
   <el-table :data="tableData" style="width: 100%">
-    <el-table-column label="图片" width="180">
+    <el-table-column prop="productName" label="商品名称" width="180"></el-table-column>
+    <el-table-column prop="productPrice" label="商品价格" width="180"></el-table-column>
+    <el-table-column prop="productClass" label="商品类别" width="180"></el-table-column>
+    <el-table-column label="商品图片" width="180">
       <template #default="scope">
-        <div style="display: flex; align-items: center">
-          <el-image style="width: 100px; height: 100px" :src="'data:image/png;base64,'+scope.row.image" fit="fit" />
+        <div v-for="(index,item) in scope.row.images" style="display: flex; align-items: center" :key="index">
+          <el-image style="width: 100px; height: 100px" :src="'data:image/png;base64,'+item" fit="fit" />
         </div>
       </template>v
     </el-table-column>
-    <el-table-column prop="product" label="关联商品" width="180"></el-table-column>
     <el-table-column label="操作">
       <template #default="scope">
         <el-button

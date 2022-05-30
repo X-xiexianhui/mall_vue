@@ -1,7 +1,7 @@
 <template>
   <el-container>
     <el-aside width="150px">Aside</el-aside>
-    <el-main>Main</el-main>
+    <el-main><router-view/></el-main>
   </el-container>
 </template>
 

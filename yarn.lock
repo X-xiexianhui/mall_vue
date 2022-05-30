@@ -6066,11 +6066,6 @@ vue@^3.2.13:
     "@vue/server-renderer" "3.2.36"
     "@vue/shared" "3.2.36"
 
-vxe-table@^4.2.4-beta.4:
-  version "4.2.4-beta.4"
-  resolved "https://registry.npmmirror.com/vxe-table/-/vxe-table-4.2.4-beta.4.tgz#04a01ed014bc12282c43603ae37d0defc7526140"
-  integrity sha512-vAw7Wz7Q2/dLXuNUV9ZH8CSia8GORnNkfzIuXIibBQja8yZ37ArUkbiUPvYvDuP+Kp8x8lKvpsuGOpM60km0Iw==
-
 watchpack@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npmmirror.com/watchpack/-/watchpack-2.3.1.tgz"
@@ -6310,11 +6305,6 @@ ws@^8.4.2:
   version "8.7.0"
   resolved "https://registry.npmmirror.com/ws/-/ws-8.7.0.tgz"
   integrity sha512-c2gsP0PRwcLFzUiA8Mkr37/MI7ilIlHQxaEAtd0uNMbVMoy8puJyafRlm0bV9MbGSabUPeLrRRaqIBcFcA2Pqg==
-
-xe-utils@^3.5.4:
-  version "3.5.4"
-  resolved "https://registry.npmmirror.com/xe-utils/-/xe-utils-3.5.4.tgz#d4335633fede280c68c1c0c9a4c8f3a533cfd831"
-  integrity sha512-oH7VOgvHv34pn198dhKPVKnuEHV22Q06YpCTVnAS3JuutylmZj/rtJGvn0BxxWQ37w2LgCknoebLA4uIGXwFtw==
 
 y18n@^5.0.5:
   version "5.0.8"

@@ -2,7 +2,7 @@
   <div>
     <mall-header/>
     <div style="margin-top:70px">
-      <el-carousel v-if="banner.length>0" trigger="click" height="300px" style="width: 70%">
+      <el-carousel v-if="banner.length>0" trigger="click" height="300px" style="width: 70%;margin: auto">
         <el-carousel-item v-for="item in banner" :key="item.id">
           <el-image style="width: 100%; height: 100%" :src="'data:image/png;base64,'+item.image" fit="contain"/>
         </el-carousel-item>

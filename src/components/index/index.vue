@@ -28,6 +28,11 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <div class="copyright">简体 | 繁体 | English | 常见问题</div>
+      <div class="copyright">LeastMall版权所有-桂ICP备xxxxxxx号 京公网安备xxxxxxxxxxxxx号 京ICP证xxxxxx号
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -68,5 +73,14 @@ export default {
 </script>
 
 <style scoped>
-
+.footer{
+  position: relative;
+  font-size: 10px;
+  color:#000;
+  bottom: -100px;
+  width:100%;
+  height:100px;
+  line-height: 20px;
+  text-align:center;
+}
 </style>

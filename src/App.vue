@@ -23,7 +23,7 @@ export default {
   margin-top: 0;
 }
 .footer{
-  position:absolute;
+  position:relative;
   font-size: 10px;
   color:#000;
   bottom:0;

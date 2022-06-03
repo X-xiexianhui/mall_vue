@@ -4,9 +4,6 @@ const routes = [
         path:'/auth/login',
         name:'login',
         component: () => import('../components/auth/login'),
-        meta: {
-            isLogin: false
-        }
     },
     {
         path: '/',
@@ -22,9 +19,4 @@ const routes = [
 export const router = createRouter({
     history: createWebHistory(),
     routes: routes
-})
-router.beforeEach((to, from) => {
-    if (from.meta.isLogin) {
-        to.meta.isLogin = true
-    }
 })

@@ -13,12 +13,12 @@
             <el-col :span="4" v-for="(product,index) in productList" :key="index" :offset="1" style="margin-bottom:40px">
               <el-card :body-style="{ padding: '0px', height:'360px'}" shadow="hover" style="width: 260px;height: 320px;">
                 <div style="padding: 6px;height: 310px;">
-                  <div style="position: relative;top: 30px;">
-                    <el-image style="width: 100%; height: 100%" :src="'data:image/png;base64,'+product['cover']" fit="contain"/>
-                    <div style="position: relative;top: 10px;left: 66px;"><i class="el-icon-time"></i>{{product["product_name"]}}</div>
+                  <div style="position: relative;top:30px">
+                    <div>{{product["product_name"]}}</div>
+                    <el-image style="width: 70%; height: 70%" :src="'data:image/png;base64,'+product['cover']" fit="contain"/>
                   </div>
-                  <div>
-                    <div><span style="font-size: large; ">{{product["descriptions"]}}</span></div>
+                  <div style="margin-top: 10px">
+                    <div style="position: relative;top: 15px"><span style="font-size: small">{{product["descriptions"]}}</span></div>
                     <div style="position: relative;top: 15px;text-align: center;color: red">￥{{product["price"]}}</div>
                   </div>
                 </div>

@@ -23,7 +23,7 @@ export default {
       banner: []
     }
   },
-  setup() {
+  created() {
     this.getBanner()
   },
   methods: {

@@ -7,19 +7,19 @@
           <el-image style="width: 100%; height: 100%" :src="'data:image/png;base64,'+item.image" fit="contain"/>
         </el-carousel-item>
       </el-carousel>
-      <div id="pro_form" style="position: relative;width: 100%;height: 1000px;">
+      <div id="pro_form" style="position: relative;width: 100%;height: 100%;">
         <div style="position: relative;top: 100px;left:130px;">
           <el-row>
             <el-col :span="4" v-for="(product,index) in productList" :key="index" :offset="1" style="margin-bottom:40px">
-              <el-card :body-style="{ padding: '0px', height:'360px'}" shadow="hover" style="width: 260px;height: 320px;">
+              <el-card :body-style="{ padding: '0px', height:'360px'}" shadow="always" style="width: 260px;height: 320px;">
                 <div style="padding: 6px;height: 310px;">
                   <div style="position: relative;top:30px">
-                    <div>{{product["product_name"]}}</div>
                     <el-image style="width: 70%; height: 70%" :src="'data:image/png;base64,'+product['cover']" fit="contain"/>
                   </div>
                   <div style="margin-top: 10px">
-                    <div style="position: relative;top: 15px"><span style="font-size: small">{{product["descriptions"]}}</span></div>
-                    <div style="position: relative;top: 15px;text-align: center;color: red">￥{{product["price"]}}</div>
+                    <div style="position: relative;top: 15px;padding: 3px">{{product["product_name"]}}</div>
+                    <div style="position: relative;top: 15px;padding: 3px"><span style="font-size: small">{{product["descriptions"]}}</span></div>
+                    <div style="position: relative;top: 15px;text-align: center;color: red;padding: 3px">￥{{product["price"]}}元</div>
                   </div>
                 </div>
               </el-card>

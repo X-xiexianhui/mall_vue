@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     getBanner(){
-      ajax.get("/api/banner/get").then( res => {
+      ajax.get("/api/banner/get",{}).then( res => {
         this.banner=res.data
       }).catch(err => {
         console.log(err)

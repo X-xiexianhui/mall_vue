@@ -18,7 +18,7 @@
                     <div style="position: relative;top: 10px;left: 66px;"><i class="el-icon-time"></i>{{product["product_name"]}}</div>
                   </div>
                   <div>
-                    <div><font size="5">{{product["descriptions"]}}</font></div>
+                    <div><span style="font-size: large; ">{{product["descriptions"]}}</span></div>
                     <div style="position: relative;top: 15px;text-align: center;color: red">￥{{product["price"]}}</div>
                   </div>
                 </div>
@@ -46,6 +46,7 @@ export default {
   },
   created() {
     this.getBanner()
+    this.getProducts()
   },
   methods: {
     getBanner(){

@@ -7,6 +7,26 @@
           <el-image style="width: 100%; height: 100%" :src="'data:image/png;base64,'+item.image" fit="contain"/>
         </el-carousel-item>
       </el-carousel>
+      <div id="pro_form" style="position: relative;width: 100%;height: 1000px;">
+        <div style="position: relative;top: 100px;left:130px;">
+          <el-row>
+            <el-col :span="4" v-for="(product,index) in productList" :key="index" :offset="1" style="margin-bottom:40px">
+              <el-card :body-style="{ padding: '0px', height:'360px'}" shadow="hover" style="width: 260px;height: 320px;">
+                <div style="padding: 6px;height: 310px;">
+                  <div style="position: relative;top: 30px;">
+                    <el-image style="width: 100%; height: 100%" :src="'data:image/png;base64,'+product.image" fit="contain"/>
+                    <div style="position: relative;top: 10px;left: 66px;"><i class="el-icon-time"></i>{{product["product_name"]}}</div>
+                  </div>
+                  <div>
+                    <div><font size="5">{{product["descriptions"]}}</font></div>
+                    <div style="position: relative;top: 15px;text-align: center;color: red">￥{{product["price"]}}</div>
+                  </div>
+                </div>
+              </el-card>
+            </el-col>
+          </el-row>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -20,7 +40,8 @@ export default {
   components: {MallHeader},
   data() {
     return {
-      banner: []
+      banner: [],
+      productList: []
     }
   },
   created() {
@@ -30,6 +51,13 @@ export default {
     getBanner(){
       ajax.get("/api/banner/get",{}).then( res => {
         this.banner=res
+      }).catch(err => {
+        console.log(err)
+      })
+    },
+    getProducts(){
+      ajax.get("/api/product/get",{}).then(res => {
+        this.productList = res
       }).catch(err => {
         console.log(err)
       })

@@ -14,7 +14,7 @@
               <el-card :body-style="{ padding: '0px', height:'360px'}" shadow="hover" style="width: 260px;height: 320px;">
                 <div style="padding: 6px;height: 310px;">
                   <div style="position: relative;top: 30px;">
-                    <el-image style="width: 100%; height: 100%" :src="'data:image/png;base64,'+product.image" fit="contain"/>
+                    <el-image style="width: 100%; height: 100%" :src="'data:image/png;base64,'+product['cover']" fit="contain"/>
                     <div style="position: relative;top: 10px;left: 66px;"><i class="el-icon-time"></i>{{product["product_name"]}}</div>
                   </div>
                   <div>

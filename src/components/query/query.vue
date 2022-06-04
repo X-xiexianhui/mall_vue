@@ -1,5 +1,6 @@
 <template>
 <div>
+  <mall-header/>
   <div style="margin-top:70px">
     <div id="pro_form" style="position: relative;width: 100%;height: 100%;">
       <div style="position: relative;top: 100px;left:130px;">
@@ -32,10 +33,11 @@
 
 <script>
 import {ajax} from "@/server/http";
-
+import MallHeader from "@/components/header/mallHeader";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "query",
+  components: {MallHeader},
   data() {
     return {
       keyWord:'',

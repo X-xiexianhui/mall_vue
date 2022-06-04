@@ -33,6 +33,7 @@ export default {
   },
   methods:{
     goToQuery(keyWord){
+      if (keyWord === '') return this.$alert('请输入搜索关键字')
       this.$router.push({path:'/query',query:{keyWord:keyWord}})
     }
   }

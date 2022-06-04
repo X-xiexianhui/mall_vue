@@ -48,7 +48,7 @@ export default {
   },
   methods:{
     getProducts(keyWord){
-      ajax.get("/api/product/query",{keyWord:keyWord}).then(res => {
+      ajax.get("/api/product/search",{keyWord:keyWord}).then(res => {
         this.productList = res
       }).catch(err => {
         console.log(err)

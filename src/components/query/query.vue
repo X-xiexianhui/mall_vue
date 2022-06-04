@@ -59,5 +59,14 @@ export default {
 </script>
 
 <style scoped>
-
+.footer{
+  position: relative;
+  font-size: 10px;
+  color:#000;
+  bottom: -100px;
+  width:100%;
+  height:100px;
+  line-height: 20px;
+  text-align:center;
+}
 </style>

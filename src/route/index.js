@@ -13,6 +13,13 @@ const routes = [
     {
         path: '/product',
         name: 'product',
+        component: () => import('../components/backend/productList')
+    },
+    {
+        path: '/query',
+        name: 'query',
+        component:() => import('../components/query/query')
+
     }
 ]
 

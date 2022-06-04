@@ -48,6 +48,7 @@ export default {
   },
   methods:{
     getProducts(keyWord){
+      if (keyWord === '') return this.$alert('请输入搜索关键字')
       ajax.get("/api/product/query",{keyWord:keyWord}).then(res => {
         this.productList = res
       }).catch(err => {

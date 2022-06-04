@@ -1,6 +1,17 @@
 <template>
   <div :class="$style.box">
     <div :class="$style.logo"><img src='@/assets/frontend/img/logo_top.png' :class="$style.logo" alt="LeastMall商城"></div>
+    <div>
+      <el-input
+          v-model="keyWord"
+          placeholder="Please input"
+          class="input-with-select"
+      >
+        <template #append>
+          <el-button icon="Search" @click="goToQuery(keyWord)"/>
+        </template>
+      </el-input>
+    </div>
     <div :class="$style.btn">
       <div style="float: left;padding: 10px">
         <el-icon :size="30"><Avatar/></el-icon>
@@ -14,7 +25,18 @@
 
 <script>
 export default {
-  name: "mallHeader"
+  name: "mallHeader",
+  data(){
+    return {
+      keyWord:''
+    }
+  },
+  methods:{
+    goToQuery(keyWord){
+      this.$router.push({path:'/query',query:{keyWord:keyWord}})
+    }
+  }
+
 }
 </script>
 
